@@ -11,6 +11,8 @@ import S04Init from "./slides/S04Init";
 import S05Memory from "./slides/S05Memory";
 import S07Worktrees from "./slides/S07Worktrees";
 import S08Shortcuts from "./slides/S08Shortcuts";
+import SSlashSetup from "./slides/SSlashSetup";
+import SSlashTask from "./slides/SSlashTask";
 import SSubAgents from "./slides/SSubAgents";
 import SCustomAgent from "./slides/SCustomAgent";
 import S09Skills from "./slides/S09Skills";
@@ -39,29 +41,31 @@ const slideComponents: Record<number, React.FC> = {
   5: S05Memory,
   6: S07Worktrees,
   7: S08Shortcuts,
-  8: SSubAgents,
-  9: SCustomAgent,
+  8: SSlashSetup,
+  9: SSlashTask,
+  10: SSubAgents,
+  11: SCustomAgent,
   // Skills act
-  10: S09Skills,
-  11: S10RTK,
-  12: S11Caveman,
-  13: S12Community,
-  14: S13CocoIndex,
-  15: S14CreateSkill,
-  16: S14Marketplace,
+  12: S09Skills,
+  13: S10RTK,
+  14: S11Caveman,
+  15: S12Community,
+  16: S13CocoIndex,
+  17: S14CreateSkill,
+  18: S14Marketplace,
   // MCP act
-  17: S15MCP,
-  18: S16Figma,
-  19: S17MCPGrid,
-  20: S18MCPSetup,
+  19: S15MCP,
+  20: S16Figma,
+  21: S17MCPGrid,
+  22: S18MCPSetup,
   // Desktop act
-  21: S19Chrome,
-  22: S19Desktop,
-  23: S20Artifacts,
+  23: S19Chrome,
+  24: S19Desktop,
+  25: S20Artifacts,
   // Hacks act
-  24: S21Hacks,
+  26: S21Hacks,
   // Closing
-  25: S22Closing,
+  27: S22Closing,
 };
 
 export default function Deck() {
