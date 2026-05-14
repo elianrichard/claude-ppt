@@ -15,12 +15,6 @@ const speed = [
   { cmd: "/btw", desc: "Quick side question without polluting main context" },
 ];
 
-const parallel = [
-  { cmd: "/background", desc: "Detach long-running tasks, free your terminal" },
-  { cmd: "/batch", desc: "Codebase-wide changes → subagents in worktrees, each opens PR" },
-  { cmd: "/loop", desc: "Watch for CI, file changes without babysitting" },
-];
-
 export default function SSlashSetup() {
   return (
     <div className="sss" style={{ textAlign: "center" }}>
@@ -28,10 +22,10 @@ export default function SSlashSetup() {
       <h2 className="reveal d1">
         Slash Commands — <span className="gradient-text">Workflow</span>
       </h2>
-      <div className="sst-cols sst-cols-3 reveal d2" style={{ marginTop: "1.5rem" }}>
+      <div className="sst-cols reveal d2" style={{ marginTop: "2rem" }}>
         <div>
           <h3 className="sst-heading">Daily Drivers</h3>
-          <div className="sss-grid" style={{ marginTop: "0.6rem" }}>
+          <div className="sss-grid" style={{ marginTop: "0.8rem" }}>
             {daily.map((c, i) => (
               <div key={i} className="sss-row">
                 <code className="sss-cmd">{c.cmd}</code>
@@ -42,19 +36,8 @@ export default function SSlashSetup() {
         </div>
         <div>
           <h3 className="sst-heading">Speed Multipliers</h3>
-          <div className="sss-grid" style={{ marginTop: "0.6rem" }}>
+          <div className="sss-grid" style={{ marginTop: "0.8rem" }}>
             {speed.map((c, i) => (
-              <div key={i} className="sss-row">
-                <code className="sss-cmd">{c.cmd}</code>
-                <span className="sss-desc">{c.desc}</span>
-              </div>
-            ))}
-          </div>
-        </div>
-        <div>
-          <h3 className="sst-heading">Parallel Work</h3>
-          <div className="sss-grid" style={{ marginTop: "0.6rem" }}>
-            {parallel.map((c, i) => (
               <div key={i} className="sss-row">
                 <code className="sss-cmd">{c.cmd}</code>
                 <span className="sss-desc">{c.desc}</span>

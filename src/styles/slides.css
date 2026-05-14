@@ -1249,17 +1249,16 @@
 .sss-grid {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
-  max-width: 620px;
+  gap: 0.7rem;
   margin: 0 auto;
 }
 
 .sss-row {
   display: flex;
   align-items: baseline;
-  gap: 1rem;
-  padding: 0.5rem 0.8rem;
-  border-radius: 6px;
+  gap: 1.2rem;
+  padding: 0.7rem 1.1rem;
+  border-radius: 8px;
   background: var(--surface);
   border: 1px solid var(--border);
   text-align: left;
@@ -1267,16 +1266,16 @@
 
 .sss-cmd {
   font-family: var(--mono);
-  font-size: 0.85rem;
+  font-size: 1rem;
   color: var(--accent);
   white-space: nowrap;
-  min-width: 120px;
+  min-width: 140px;
 }
 
 .sss-desc {
-  font-size: 0.82rem;
+  font-size: 0.95rem;
   color: var(--muted);
-  line-height: 1.35;
+  line-height: 1.4;
 }
 
 /* ═══════════════════════════════════════════════════════
@@ -1285,22 +1284,17 @@
 .sst-cols {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 2rem;
-  max-width: 900px;
+  gap: 2.5rem;
+  max-width: 1050px;
   margin: 0 auto;
   text-align: left;
 }
 
-.sst-cols-3 {
-  grid-template-columns: 1fr 1fr 1fr;
-  max-width: 1100px;
-}
-
 .sst-heading {
-  font-size: 1.05rem;
+  font-size: 1.15rem;
   color: var(--fg);
   margin-bottom: 0.3rem;
-  padding-left: 0.7rem;
+  padding-left: 1rem;
   font-weight: 600;
 }
 
